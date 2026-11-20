@@ -1,0 +1,26 @@
+<?php /** @var View $this **/ ?>
+<div class="mb-3">
+    <label for="openplex_server_name" class="form-label"><?php $this->_('Openplex.row.server_name'); ?></label>
+    <?php $this->Form->fieldText('server_name', $vars->server_name ?? null, ['id' => 'openplex_server_name', 'class' => 'form-control']); ?>
+</div>
+<div class="mb-3">
+    <label for="openplex_host_name" class="form-label"><?php $this->_('Openplex.row.host_name'); ?></label>
+    <?php $this->Form->fieldText('host_name', $vars->host_name ?? null, ['id' => 'openplex_host_name', 'class' => 'form-control', 'placeholder' => 'panel.example.com']); ?>
+    <div class="form-text"><?php $this->_('Openplex.row.host_name.hint'); ?></div>
+</div>
+<div class="mb-3">
+    <div class="form-check">
+        <?php $this->Form->fieldCheckbox('use_ssl', 'true', ($vars->use_ssl ?? 'true') === 'true', ['id' => 'openplex_use_ssl', 'class' => 'form-check-input']); ?>
+        <label for="openplex_use_ssl" class="form-check-label"><?php $this->_('Openplex.row.use_ssl'); ?></label>
+    </div>
+</div>
+<div class="mb-3">
+    <label for="openplex_port" class="form-label"><?php $this->_('Openplex.row.port'); ?></label>
+    <?php $this->Form->fieldText('port', $vars->port ?? null, ['id' => 'openplex_port', 'class' => 'form-control', 'placeholder' => '443']); ?>
+    <div class="form-text"><?php $this->_('Openplex.row.port.hint'); ?></div>
+</div>
+<div class="mb-3">
+    <label for="openplex_api_key" class="form-label"><?php $this->_('Openplex.row.api_key'); ?></label>
+    <?php $this->Form->fieldPassword('api_key', ['id' => 'openplex_api_key', 'class' => 'form-control', 'value' => $vars->api_key ?? null, 'autocomplete' => 'off']); ?>
+    <div class="form-text"><?php $this->_('Openplex.row.api_key.hint'); ?></div>
+</div>

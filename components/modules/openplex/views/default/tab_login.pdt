@@ -1,0 +1,11 @@
+<?php /** @var View $this **/ ?>
+<div class="openplex-login">
+    <?php if (!empty($error)) { ?>
+    <div class="alert alert-danger"><?php $this->Html->_($error); ?></div>
+    <?php } ?>
+    <p><?php $this->_('Openplex.tab_login.intro'); ?></p>
+    <?php $this->Form->create($action, ['target' => '_blank']); ?>
+    <?php $this->Form->fieldHidden('openplex_login', '1'); ?>
+    <button type="submit" class="btn btn-primary"><?php $this->_('Openplex.tab_login.button'); ?></button>
+    <?php $this->Form->end(); ?>
+</div>

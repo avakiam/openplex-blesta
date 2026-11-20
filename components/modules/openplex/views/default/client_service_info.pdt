@@ -1,0 +1,26 @@
+<?php /** @var View $this **/ ?>
+<div class="table-responsive">
+    <table class="table table-curved table-striped">
+        <thead>
+            <tr>
+                <th><?php $this->_('Openplex.service_field.username'); ?></th>
+                <th><?php $this->_('Openplex.service_field.domain'); ?></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><?php $this->Html->_($service_fields->openplex_username); ?></td>
+                <td><?php $this->Html->_($service_fields->openplex_domain); ?></td>
+                <td>
+                    <?php if (($service->status ?? '') === 'active') { ?>
+                    <?php $this->Form->create($login_url, ['target' => '_blank', 'class' => 'd-inline']); ?>
+                    <?php $this->Form->fieldHidden('openplex_login', '1'); ?>
+                    <button type="submit" class="btn btn-sm btn-light"><?php $this->_('Openplex.service_info.login'); ?></button>
+                    <?php $this->Form->end(); ?>
+                    <?php } ?>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,29 @@
+{
+    "version": "1.0.0",
+    "name": "Openplex.name",
+    "description": "Openplex.description",
+    "authors": [
+        {
+            "name": "Avakiam",
+            "url": "https://openplex.dev"
+        }
+    ],
+    "package": {
+        "name_key": "openplex_domain"
+    },
+    "service": {
+        "name_key": "openplex_domain"
+    },
+    "module": {
+        "row": "Openplex.module_row",
+        "rows": "Openplex.module_row_plural",
+        "row_key": "server_name",
+        "group": "Openplex.module_group"
+    },
+    "email_tags": {
+        "module": ["host_name", "port"],
+        "package": ["role", "max_domains", "max_databases"],
+        "service": ["openplex_domain", "openplex_username", "openplex_password"]
+    },
+    "logo": "views/default/images/logo.svg"
+}
