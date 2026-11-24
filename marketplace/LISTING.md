@@ -19,7 +19,7 @@ account.blesta.com). Keep them in step with README.md and CHANGES.md.
 | Logo | `logo-512.png` (or `logo-256.png` if a smaller one is asked for) |
 | Name | OpenPlex |
 | Tags | openplex, hosting, control panel, provisioning, single sign-on, open source, docker, wordpress |
-| Discussion URL | *(empty for now; a thread on the Blesta forums' Marketplace section can be added later)* |
+| Discussion URL | *(empty until the forum thread in `FORUM.md` is posted)* |
 | Attributes | *(none: "Client Management" and "Config Options" don't apply)* |
 
 ### Description (markdown)
