@@ -1,6 +1,6 @@
 # Changes
 
-## Unreleased
+## 1.0.2
 
 - The Delete buttons on the module's page are the same size as the Edit links.
 
