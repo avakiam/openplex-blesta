@@ -1,5 +1,9 @@
 # Changes
 
+## Unreleased
+
+- The Delete buttons on the module's page are the same size as the Edit links.
+
 ## 1.0.1
 
 - Deleting a server or a server group from the module's page works in Blesta 6:
