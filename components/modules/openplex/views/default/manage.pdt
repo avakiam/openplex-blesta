@@ -41,7 +41,7 @@ $groups = $module->groups ?? [];
                         $this->Form->fieldHidden('id', $module->id);
                         $this->Form->fieldHidden('row_id', $row->id);
                         ?>
-                        <a href="<?php echo $this->Html->safe($this->base_uri . 'settings/company/modules/deleterow/' . $module->id . '/' . $row->id . '/'); ?>" class="manage" rel="<?php $this->_('Openplex.manage.rows.confirm_delete'); ?>"><?php $this->_('Openplex.manage.delete'); ?></a>
+                        <button type="submit" class="btn btn-link p-0 align-baseline" data-confirm="<?php echo $this->Html->safe($this->_('Openplex.manage.rows.confirm_delete', true)); ?>" onclick="return confirm(this.getAttribute('data-confirm'));"><?php $this->_('Openplex.manage.delete'); ?></button>
                         <?php $this->Form->end(); ?>
                     </td>
                 </tr>
@@ -74,7 +74,7 @@ $groups = $module->groups ?? [];
                         $this->Form->fieldHidden('id', $module->id);
                         $this->Form->fieldHidden('group_id', $group->id);
                         ?>
-                        <a href="<?php echo $this->Html->safe($this->base_uri . 'settings/company/modules/deletegroup/' . $module->id . '/' . $group->id . '/'); ?>" class="manage" rel="<?php $this->_('Openplex.manage.groups.confirm_delete'); ?>"><?php $this->_('Openplex.manage.delete'); ?></a>
+                        <button type="submit" class="btn btn-link p-0 align-baseline" data-confirm="<?php echo $this->Html->safe($this->_('Openplex.manage.groups.confirm_delete', true)); ?>" onclick="return confirm(this.getAttribute('data-confirm'));"><?php $this->_('Openplex.manage.delete'); ?></button>
                         <?php $this->Form->end(); ?>
                     </td>
                 </tr>
@@ -87,8 +87,3 @@ $groups = $module->groups ?? [];
     </div>
 </div>
 <?php $this->Widget->end(); ?>
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#manage_openplex a.manage[rel]').blestaModalConfirm({base_url: '<?php echo $this->base_uri; ?>', close: '<?php $this->_('AppController.modal.text_close'); ?>', submit: true});
-});
-</script>

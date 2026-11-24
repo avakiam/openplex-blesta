@@ -17,7 +17,7 @@ accounts as orders are paid, go overdue or are cancelled.
 ## Requirements
 
 - OpenPlex **0.31** or newer (the single sign-on, suspension and purge endpoints).
-- Blesta 5 or newer, PHP 7.4+ with cURL.
+- Blesta 5 or 6 (tested with 6.0.5), PHP 7.4+ with cURL.
 - Blesta must reach the panel's API: its HTTPS domain, or its address and port.
 
 ## Install
@@ -86,6 +86,9 @@ php tests/lifecycle.php
 
 With `OPX_KEY` (an administrator's API key) and `OPX_PORT`, it runs against a
 real panel on the same machine instead.
+
+`tests/lifecycle-blesta.php` runs the same lifecycle inside a real Blesta, through
+Blesta's own models, against a real (test) panel; see the comment at its top.
 
 ## Licence
 
