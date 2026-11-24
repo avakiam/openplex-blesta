@@ -57,12 +57,21 @@ Free and open source (MIT). OpenPlex itself is free software (AGPL-3.0): https:/
 
 | Field | Value |
 |---|---|
-| Version | 1.0.1 |
-| Download URL | https://github.com/avakiam/openplex-blesta/releases/download/v1.0.1/openplex-blesta-1.0.1.zip |
+| Version | 1.0.2 |
+| Download URL | https://github.com/avakiam/openplex-blesta/releases/download/v1.0.2/openplex-blesta-1.0.2.zip |
 
 ### Changelog
 
-One entry per version (Manage → Versions → Add New Version, type "Direct Download"):
+One entry per version (Manage → Versions → Add New Version, type "Direct Download").
+
+1.0.2:
+
+```markdown
+- The Delete buttons on the module's page are the same size as the Edit links.
+- Tested in a real Blesta 6.0.5 against OpenPlex 0.34.0, including the upgrade from 1.0.0 (click Upgrade for OpenPlex under Settings → Company → Modules after unzipping).
+```
+
+1.0.1:
 
 ```markdown
 - Deleting a server or a server group from the module's page works in Blesta 6; it asks for confirmation with the browser's own dialog (Blesta 5 and 6).
